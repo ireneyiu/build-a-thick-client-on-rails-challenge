@@ -1,0 +1,7 @@
+<h1>{{question}}</h1>
+<form action="/questions/{{question_id}}/answers" method="post" class="question-form">
+  {{#each choices}}
+    <input type="radio" name="choice_id" value="{{choice_id}}">{{choice}}<br>
+  {{/each}}
+  <input type="submit" value="Submit">
+</form>

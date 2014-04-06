@@ -1,0 +1,7 @@
+<ul>
+  {{#each quizzes}}
+  <li>
+    <a href="/quizzes/{{quiz_id}}/questions/next" data-id="{{quiz_id}}" class="quiz-link">{{name}}</a>
+  </li>
+  {{/each}}
+</ul>
